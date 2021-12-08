@@ -10,7 +10,7 @@ private fun day(input: List<String>) {
     println("Part 2 -> ${part2(input)}")
 }
 
-data class Line(val a: Int, val b: Int, val i: Int, val j: Int)
+private data class Line(val a: Int, val b: Int, val i: Int, val j: Int)
 
 private fun parse(input: List<String>) = input.map { line ->
     val (x1, y1, x2, y2) = line.split(" -> |,".toRegex()).map { it.toInt() }
